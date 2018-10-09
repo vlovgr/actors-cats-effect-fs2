@@ -1,15 +1,14 @@
 package app
 
-import cats.effect.IO
+import app.auth.requestActiveAuthToken
+import cats.effect.{ExitCode, IO, IOApp}
 
-object Main extends SafeApp {
-  override def run(args: List[String]): IO[Unit] = {
-    val auth = new AuthAlg[IO]() {}
-
+object Main extends IOApp {
+  override def run(args: List[String]): IO[ExitCode] = {
     for {
-      requestActiveAuthToken <- auth.requestActiveAuthToken
+      requestActiveAuthToken <- requestActiveAuthToken[IO]
       activeAuthToken <- requestActiveAuthToken
       _ <- IO(println(activeAuthToken))
-    } yield ()
+    } yield ExitCode.Success
   }
 }

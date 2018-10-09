@@ -6,7 +6,7 @@ lazy val root = project
   .enablePlugins(GhpagesPlugin, TutPlugin)
 
 lazy val scalaSettings = Seq(
-  scalaVersion := "2.12.6",
+  scalaVersion := "2.12.7",
   scalacOptions ++= Seq(
     "-deprecation",
     "-encoding", "UTF-8",
@@ -35,6 +35,6 @@ lazy val publishSettings = Seq(
 
 lazy val dependencySettings = Seq(
   libraryDependencies ++= Seq(
-    "co.fs2" %% "fs2-core" % "0.10.4"
+    "co.fs2" %% "fs2-core" % "1.0.0"
   )
 )
