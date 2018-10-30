@@ -5,3 +5,5 @@ Title slide is available here: https://vlovgr.github.io/actors-cats-effect-fs2.
 
 - [2018-05-04 Tech Time @ Ovo Energy, London](https://www.youtube.com/watch?v=uZnHMhtMEbo)
 - [2018-05-23 Scala in the City @ Concentra, London](https://www.youtube.com/watch?v=EL3xy9DKhno)
+
+Inspired by the presentation [Scalaz 8 vs Akka Actors](https://www.youtube.com/watch?v=Eihz7kqn6mU) by John A. De Goes.
